@@ -1,0 +1,103 @@
+:root {
+
+    --primary-clr: #fcf63a;
+    --sec-clr: #61C940;
+    --green-clr: #1B3D2F;
+    --lightgreen-clr: #C0BA82;
+  
+    --white-clr1: #FBF9F0;
+    --white-clr2: #fffada;
+    --white-pink: #ffd7dd;
+  
+    --deep-gray01: #2a2924;
+    --deep-gray02: #2d2d23;
+    --deep-gray03: #2a2d24;
+    --light-gray: #AFAC99;
+  
+    --dark-clr1: #070706;
+    --dark-clr2: #00180e;
+
+    --bgDark-clr1: #0f0f0a;
+
+    --opac-p01: #fcf53a10;
+    --opac-p03: #fcf53a3c;
+    --opac-p05: #fcf53a8e;
+
+    --opac-d01: #05050311;
+    --opac-d03: #05050339;
+    --opac-d05: #05050385;
+    --opac-d07: #050503c2;
+
+    --opac-w01: #fffff311;
+    --opac-w03: #ffffe939;
+    --opac-w05: #fffff185;
+    --opac-w07: #fffff1a4;
+  
+    --font-inter: var(--font-i);
+    --font-alegreya: var(--font-a);
+  
+    --bdr-small: 4px;
+    --bdr-mid: 8px;
+    --bdr-large: 16px;
+    --bdr-xlarge: 20px;
+    --bdr-xxlarge: 32px;
+
+    --padding-small: 5%;
+    --padding-gen: 10%;
+
+    --nav-height: 80px;
+}
+
+.signInCntn{
+    width: 100%;
+    min-height: 100dvh;
+    position: relative;
+    background-color: var(--deep-gray01);
+}
+
+.signInCntn .top_top {
+    width: 100%;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-gray01);
+    box-shadow: 0px 2px 4px var(--opac-w01);
+
+    position: sticky;
+    top: 0;
+    z-index: 100000000;
+}
+
+.signInCntn .bottom{
+    display: grid;
+    place-items: center;
+    min-height: calc(100dvh - var(--nav-height));
+    padding-block: 2em 4em;
+}
+
+.signInCntn .cl-signUp-start,
+.signInCntn .cl-signIn-emailLinkVerify,
+.signInCntn .cl-signIn-alternativeMethods,
+.signInCntn .cl-signIn-emailCode,
+.signInCntn .cl-signIn-start
+{
+    background-color: transparent !important;
+}
+
+
+.signInCntn .cl-footer
+{
+    background: var(--opac-w01);
+}
+
+.signInCntn form input{
+    background-color: transparent;
+    max-height: 2.7rem;
+}
+
+.signInCntn form button.cl-formButtonPrimary {
+    background-color: var(--lightgreen-clr);
+    border-radius: 4px;
+    padding: 0.87rem 0.75rem;
+}
