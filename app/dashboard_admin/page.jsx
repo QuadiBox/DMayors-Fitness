@@ -67,7 +67,7 @@ const Page = async () => {
                 <section className='overview dashprofileCntn dashCntn'>
                         <div className='fancyBorderClass subsActivitiesCntn '>
                             <div className="subsActivities">
-                                <h2>Users' Subscriptions</h2>
+                                <h2>Users&apos; Subscriptions</h2>
                                 {
                                 filtered_data ? (
                                     <>
@@ -100,7 +100,7 @@ const Page = async () => {
                                             </ul>
                                         </div>
                                         <div className="bottomDeep">
-                                            <Link href={"/dashboard_admin/subs"}>See all users' subscriptions</Link>
+                                            <Link href={"/dashboard_admin/subs"}>See all users&apos; subscriptions</Link>
                                         </div>
                                     </>
                                 ) : (

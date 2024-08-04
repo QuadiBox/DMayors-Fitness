@@ -148,7 +148,7 @@ const SubsClient = ({ subs_db_data, utilData }) => {
                                             </li>
                                             ))
                                     ) : (
-                                        <h2 className='theEmptyFilter'>Nothing matches "<span>{searchValue}</span>" in the subcriptions list</h2>
+                                        <h2 className='theEmptyFilter'>Nothing matches &quot;<span>{searchValue}</span>&quot; in the subcriptions list</h2>
                                     )
                                 }
                             </ul>

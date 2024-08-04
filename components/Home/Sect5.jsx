@@ -279,11 +279,11 @@ const Sect5 = () => {
                     {activeEventDisplay.map((elem, idx) => (
                         <div key={`displayUnit_${idx}`} className="eventDisplayUnit opening" style={{backgroundImage: `linear-gradient(to bottom, var(--opac-d03), var(--opac-d05)), url(${elem?.imageUrl})`}}>
                             <h2>{elem?.displayDetails?.heading}</h2>
-                            {elem?.displayDetails?.para.map(elem => (<p dangerouslySetInnerHTML={{__html: elem}}></p>))}
+                            {elem?.displayDetails?.para.map((elem, idx) => (<p dangerouslySetInnerHTML={{__html: elem}} key={`eventText_${idx}`}></p>))}
                             <div className="flex-Div">
                                 {
                                     elem?.displayDetails?.links && (
-                                        elem?.displayDetails?.links.map((elem, idx) => (<Link className={`${idx % 2 !== 0 ? "specBtn fillBtn": "specBtn borderBtn"}`} href={elem.href}>{elem.text}</Link>))
+                                        elem?.displayDetails?.links.map((elem, idx) => (<Link key={`eventText_${idx}`} className={`${idx % 2 !== 0 ? "specBtn fillBtn": "specBtn borderBtn"}`} href={elem.href}>{elem.text}</Link>))
                                     )
                                 }
                             </div>

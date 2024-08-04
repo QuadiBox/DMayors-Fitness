@@ -47,7 +47,7 @@ const FAQ = () => {
                         <i className="icofont-thin-down" style={{rotate: `${activeFAQ === 2? "180deg": "0deg"}`}} ></i>
                     </div>
                     <div className="answerBody">
-                        <p>We'll love you to become a long-term member of our family but if a short-term membership is what suits you, we offer various types of short-term membership packages from 5-days packages to just monthly packages.</p>
+                        <p>We&apos;ll love you to become a long-term member of our family but if a short-term membership is what suits you, we offer various types of short-term membership packages from 5-days packages to just monthly packages.</p>
                         <p><Link href={"/"}>Click here</Link> to learn more about al our membership packages.</p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const FAQ = () => {
                         <i className="icofont-thin-down" style={{rotate: `${activeFAQ === 3? "180deg": "0deg"}`}}></i>
                     </div>
                     <div className="answerBody">
-                        <p>Certain memberships have free guest privileges. The best way to find out about your membership guest policy to read the privilegesof the current membership you're on <Link href={"/"}>here.</Link> or to contact us <Link href={"/"}>here</Link> for detailed guide. </p>
+                        <p>Certain memberships have free guest privileges. The best way to find out about your membership guest policy to read the privilegesof the current membership you&apos;re on <Link href={"/"}>here.</Link> or to contact us <Link href={"/"}>here</Link> for detailed guide. </p>
                     </div>
                 </div>
                 <div className="unitQuestion" style={{gridTemplateRows: `max-content ${activeFAQ === 4? "1fr": "0px"}`}}>

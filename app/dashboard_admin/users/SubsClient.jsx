@@ -92,8 +92,8 @@ const SubsClient = ({ subs_db_data, filtered_data }) => {
                                                     </div>
                                                 </div>
                                                 <ul>
-                                                    <li onClick={() => { setCriteria("name")}} className={`sortOpt ${criteria === "name" ? "active" : ""}`}>User's Name</li>
-                                                    <li onClick={() => { setCriteria("email")}} className={`sortOpt ${criteria === "email" ? "active" : ""}`}>User's Name</li>
+                                                    <li onClick={() => { setCriteria("name")}} className={`sortOpt ${criteria === "name" ? "active" : ""}`}>User&apos;s Name</li>
+                                                    <li onClick={() => { setCriteria("email")}} className={`sortOpt ${criteria === "email" ? "active" : ""}`}>User&apos;s Name</li>
                                                     <li onClick={() => { setCriteria("user_name")}} className={`sortOpt ${criteria === "user_name" ? "active" : ""}`}>Username Code</li>
                                                     <li onClick={() => { setCriteria("date")}} className={`sortOpt ${criteria === "date" ? "active" : ""}`}>Account Creation Date</li>
                                                 </ul>
@@ -141,7 +141,7 @@ const SubsClient = ({ subs_db_data, filtered_data }) => {
                                                 </li>
                                             ))
                                     ) : (
-                                        <h2 className='theEmptyFilter'>Nothing matches "<span>{searchValue}</span>" in the list of users</h2>
+                                        <h2 className='theEmptyFilter'>Nothing matches &quot;<span>{searchValue}</span>&quot; in the list of users</h2>
                                     )
                                 }
                             </ul>

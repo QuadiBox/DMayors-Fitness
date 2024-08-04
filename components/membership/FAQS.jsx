@@ -28,7 +28,7 @@ const FAQ = () => {
                         <i className="icofont-thin-down" style={{rotate: `${activeFAQ === 0? "180deg": "0deg"}`}}></i>
                     </div>
                     <div className="answerBody">
-                        <p>This feature is incoming and will be available very shortly. All you&apos;ll be needing is their Account's Identification number</p>
+                        <p>This feature is incoming and will be available very shortly. All you&apos;ll be needing is their Account&apos;s Identification number</p>
                         <p>We&apos;ll keep you posted!</p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const FAQ = () => {
                         <i className="icofont-thin-down" style={{rotate: `${activeFAQ === 3? "180deg": "0deg"}`}}></i>
                     </div>
                     <div className="answerBody">
-                        <p>Certain memberships have free guest privileges. The best way to find out about your membership guest policy to read the privilegesof the current membership you're on <Link href={"/"}>here.</Link> or to contact us <Link href={"/"}>here</Link> for detailed guide. </p>
+                        <p>Certain memberships have free guest privileges. The best way to find out about your membership guest policy to read the privilegesof the current membership you&apos;re on <Link href={"/"}>here.</Link> or to contact us <Link href={"/"}>here</Link> for detailed guide. </p>
                     </div>
                 </div>
                 <p>Have more questions? <Link href="#"> Contact Us</Link></p>

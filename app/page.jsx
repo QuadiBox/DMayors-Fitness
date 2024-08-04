@@ -19,7 +19,7 @@ export default function Home() {
           <HeroSectBg src={"/hero_img5.jpg"}></HeroSectBg>
           <div className="homeheroTextCnt">
             <h1><span>FREE UP YOUR SOUL...</span> <span>WORK OUT YOUR BODY</span></h1>
-            <p><span>"Your body is an armor wherein your soul dwells"</span>. To keep your body fit is to keep your  soul safe and free. We believe in empowering you to unlock your full potential. Join us today and start building a stronger, healthier, and more confident you.</p>
+            <p><span>&quot;Your body is an armor wherein your soul dwells&quot;</span>. To keep your body fit is to keep your  soul safe and free. We believe in empowering you to unlock your full potential. Join us today and start building a stronger, healthier, and more confident you.</p>
             <div className="heroCTA">
               <Link className="specBtn borderBtn" href={"/membership"}>Join us now</Link>
               <Link className="specBtn fillBtn" href={"/about"}>Learn more</Link>
@@ -32,9 +32,9 @@ export default function Home() {
         <Sect2></Sect2>
         <section className="homeSect3">
           <div className="grooveDisplay">
-            <h2>Visit  <b> DMAYOR'S GROOVE</b>  <br /> <span>...a subsidiary of DMayor Enterprise</span></h2>
+            <h2>Visit  <b> DMAYOR&apos;S GROOVE</b>  <br /> <span>...a subsidiary of DMayor Enterprise</span></h2>
             <p>Are you in search for a place where culinary perfection meets with fun, relaxation and comfort?</p>
-            <p>DMayor's Groove put your quests to a halt by offering all these with extra cherry on top. Enjoy various fun activities including dance parties, karaoke nights and ball, all with multitude of intresting prizes to win.</p>
+            <p>DMayor&apos;s Groove put your quests to a halt by offering all these with extra cherry on top. Enjoy various fun activities including dance parties, karaoke nights and ball, all with multitude of intresting prizes to win.</p>
             <p>EAT . DRINK . CONNECT</p>
             <a href="/">Visit Site</a>
           </div>

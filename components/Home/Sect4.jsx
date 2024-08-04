@@ -10,7 +10,7 @@ const Sect4 = () => {
                 <div className="topBlogImg"></div>
                 <div className="bottomBlogData">
                     <h3>Unraveling the Mysteries of Macronutrients: Your Guide to Healthier Eating</h3>
-                    <p>Discover the essential building blocks of nutrition with our comprehensive guide to macronutrients. Learn how proteins, fats, and carbohydrates impact your health and how to balance them for optimal well-being. Whether you're aiming to boost your energy, build muscle, or maintain a healthy weight, our article provides practical tips and insights to help you make informed dietary choices.</p>
+                    <p>Discover the essential building blocks of nutrition with our comprehensive guide to macronutrients. Learn how proteins, fats, and carbohydrates impact your health and how to balance them for optimal well-being. Whether you&apos;re aiming to boost your energy, build muscle, or maintain a healthy weight, our article provides practical tips and insights to help you make informed dietary choices.</p>
 
                     <div className="blogiconholder"><i className="icofont-culinary"></i></div>
                 </div>
@@ -19,7 +19,7 @@ const Sect4 = () => {
                 <div className="topBlogImg"></div>
                 <div className="bottomBlogData">
                     <h3>Top 4 Strategies for Staying Motivated and Consistent with Your Gym Routine</h3>
-                    <p>Maintaining motivation and consistency with your gym routine is crucial for long-term success in your health and fitness journey. Let's explore effective strategies to help you stay motivated and consistent, overcome common challenges, and ensure your workouts remain engaging and effective.</p>
+                    <p>Maintaining motivation and consistency with your gym routine is crucial for long-term success in your health and fitness journey. Let&apos; explore effective strategies to help you stay motivated and consistent, overcome common challenges, and ensure your workouts remain engaging and effective.</p>
 
                     <div className="blogiconholder"><i className="icofont-gym"></i></div>
                 </div>
@@ -28,7 +28,7 @@ const Sect4 = () => {
                 <div className="topBlogImg"></div>
                 <div className="bottomBlogData">
                     <h3>Busting Common Fitness Myths: Get the Facts and Improve Your Fitness Journey at DMayor Fitness Hub</h3>
-                    <p>Navigating the world of fitness can sometimes feel like walking through a maze of misconceptions. Whether they're born out of anecdotal evidence, misinterpreted studies, or old-school thinking, fitness myths are everywhere. As we all strive to achieve our fitness goals, it's essential to ground our strategies and habits in scientific truth.</p>
+                    <p>Navigating the world of fitness can sometimes feel like walking through a maze of misconceptions. Whether they&apos;re born out of anecdotal evidence, misinterpreted studies, or old-school thinking, fitness myths are everywhere. As we all strive to achieve our fitness goals, it&apos;s essential to ground our strategies and habits in scientific truth.</p>
 
                     <div className="blogiconholder"><i className="icofont-gym-alt-2"></i></div>
                 </div>

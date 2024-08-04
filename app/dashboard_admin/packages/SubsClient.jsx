@@ -84,18 +84,18 @@ const SubsClient = ({ sub_data }) => {
                     {
                         sub_data?.customer.first_name && (
                             <div className="unitDataCard">
-                                <h4>Customer's Name :</h4>
+                                <h4>Customer&apos;s Name :</h4>
                                 <div className="dataValue">{sub_data?.customer.first_name} {sub_data?.customer.last_name}</div>
                             </div>
 
                         )
                     }
                     <div className="unitDataCard">
-                        <h4>Customer's Email :</h4>
+                        <h4>Customer&apos;s Email :</h4>
                         <div className="dataValue">{sub_data?.customer.email}</div>
                     </div>
                     <div className="unitDataCard">
-                        <h4>Customer's Id :</h4>
+                        <h4>Customer&apos;s Id :</h4>
                         <div className="dataValue">{sub_data?.customer.customer_code}</div>
                     </div>
                     <div className="unitDataCard">

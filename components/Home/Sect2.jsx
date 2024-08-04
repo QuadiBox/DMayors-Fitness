@@ -84,8 +84,8 @@ const Sect2 = () => {
   return (
     <section className="homeSect2">
           <div className="topHomeSect2">
-            <h2>DMAYOR'S EXPERIENCE : Achieve the healthiest, happiest you</h2>
-            <p>Any gym can promise a challenging workout. At <span>DMayor Fitness Hub</span>, we think beyond the body. Our <span>19,000 sq.ft</span>, world-class facility provides a personalized, premium fitness experience that's uniquely designed to improve your mind, body, and soul.</p>
+            <h2>DMAYOR&apos;S EXPERIENCE : Achieve the healthiest, happiest you</h2>
+            <p>Any gym can promise a challenging workout. At <span>DMayor Fitness Hub</span>, we think beyond the body. Our <span>9,000 sq.ft</span>, world-class facility provides a personalized, premium fitness experience that&apos;s uniquely designed to improve your mind, body, and soul.</p>
           </div>
          <div className="bottomExpCntn">
             <div className="fitness_gym_exp">
@@ -96,7 +96,7 @@ const Sect2 = () => {
                   <div className="iconSpec">
                     <i className="icofont-brain-alt"></i>
                   </div>
-                  <p>DMayor Fitness Hub offers spaces fully integrated in the hub's architecture, characterized by their ample size, comfort and state-of-the-art equipment.</p>
+                  <p>DMayor Fitness Hub offers spaces fully integrated in the hub&apos;s architecture, characterized by their ample size, comfort and state-of-the-art equipment.</p>
                   <p>Membership plans starts from <span>#3k</span>. </p>
                   <Link className="specBtn fillBtn" href={"/membership"}>Become a member </Link>
                 </div>
@@ -151,7 +151,7 @@ const Sect2 = () => {
                   </div>
                   <h3>Amphibious</h3>
                   <p>The perfect balance between land and water</p>
-                  <p>Various water activities available everyday. If your need is a well-deserved aquatic relaxation after a intensive work-out, we've got you.</p>
+                  <p>Various water activities available everyday. If your need is a well-deserved aquatic relaxation after a intensive work-out, we&apos;ve got you.</p>
                   <p><span>REST.RELAX.REPOSE</span></p>
                 </div>
               </div>
@@ -164,7 +164,7 @@ const Sect2 = () => {
                   </div>
                   <h3>Get Your Game face On</h3>
                   <p>Fitness, fun and relaxation is a <span>perfect</span> mix. A whole spectrum of indoor <span>games</span> are always available at your beckon.</p>
-                  <p>From computer games, billiards to table tennis, we've got it all.</p>
+                  <p>From computer games, billiards to table tennis, we&apos;ve got it all.</p>
                   <p><span>COME.PLAY.WIN</span></p>
                 </div>
               </div>
