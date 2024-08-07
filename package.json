@@ -14,6 +14,7 @@
     "firebase": "^10.12.3",
     "framer-motion": "^11.2.6",
     "next": "14.2.3",
+    "ngrok": "^5.0.0-beta.2",
     "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",

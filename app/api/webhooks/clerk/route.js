@@ -79,10 +79,14 @@ export async function POST(req) {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #dadadacb;
+            background-color: #f3f3ef52;
             backdrop-filter: blur(10px);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container p{
+          font-weight: 400px;
         }
 
         .header {
@@ -111,8 +115,7 @@ export async function POST(req) {
         }
 
         ul{
-            display: flex;
-            flex-direction: column;
+            display: grid;
             gap: 8px;
         }
 
@@ -151,7 +154,7 @@ export async function POST(req) {
             color: #666;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 450px) {
             body {
                 font-size: 13px;
             }
@@ -171,7 +174,7 @@ export async function POST(req) {
             <h1>Welcome to DMayor Fitness & Game Hub! 🏋️‍♂️🎮</h1>
         </div>
         <div class="content">
-            <p>Dear ${eventData.firstname},</p>
+            <p>Dear ${eventData.first_name},</p>
             <p>Welcome to the DMayor Fitness & Game Hub family! We're thrilled to have you join us on this exciting journey toward a healthier, stronger, and more vibrant you.</p>
             <p>At DMayor Fitness & Game Hub, we believe in more than just workouts and routines. We believe in creating a supportive, uplifting community where every member feels like family. Whether you're here to lift weights, join a fitness class, or enjoy our game hub, you're now part of a family that inspires and motivates each other every step of the way.</p>
             <p>To kickstart your fitness journey, we invite you to explore our range of subscription options tailored to fit your goals and lifestyle. By subscribing, you'll gain access to exclusive content, personalized workout plans, and a community of like-minded individuals who are as passionate about fitness as you are.</p>
@@ -200,12 +203,14 @@ export async function POST(req) {
   // Example: saveUserDataToDatabase(evt.data);
   if (eventType === 'user.created') {
     addDocument('users', eventData);
+    console.log("data successfully stored");
     sendWelcomeEmail(
       'quadvox0@gmail.com',
       "We all at DMayor Fitness & Game hub warmly welcome you to our beautiful family",
       "Welcome to DMayor Fitness & Game Hub Family! 🏋️‍♂️🎮",
       html_to_mail
     );
+    console.log("email successfully sent");
   }
 
   return NextResponse.json({}, { status: 200 });
@@ -218,7 +223,7 @@ export async function POST(req) {
  * @returns {Promise<NextResponse>} - The response object.
  */
 export async function GET(req) {
-  return NextResponse.json({ message: 'Method not allowed - This endpoint is only for POST requests' }, { status: 405 });
+  return NextResponse.json({ message: 'Method not allowed - This endpoint {webhooks/clerk} is only for POST requests' }, { status: 405 });
 }
 
 // Default export to handle all HTTP methods
