@@ -133,6 +133,8 @@ const Navbar = () => {
                 <Link href={"/"}> <p>DMAYOR FITNESS <i className="icofont-x"></i></p></Link>
             </div>
 
+            {/* <div><h1>Dear Quadri, <br /> We warmly welcome you to the family</h1><p>Nice having you here.</p><p>Would you care to <a href="https://dmayorsfitness.vercel.app/membership">subscribe</a> and get started right away?</p></div> */}
+
             <div className="rightBox">
                 <SignedOut>
                     <div className="linkSetUp1">

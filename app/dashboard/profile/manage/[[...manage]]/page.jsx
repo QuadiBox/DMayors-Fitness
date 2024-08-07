@@ -19,13 +19,6 @@ const Page =  () => {
                 <i className="icofont-rounded-double-right"></i>
                 <p>Profile Management</p>
             </div>
-            {/* <section className='profile dashprofileCntn'>
-                <div className="fancyBorderClass dashpfpDisplayCntn">
-                    <div className="firstSection">
-                        
-                    </div>
-                </div>
-            </section> */}
             <div className="profilemanagement">
                 <UserProfile
                     appearance={{
@@ -36,6 +29,7 @@ const Page =  () => {
                             colorInputBackground: "transparent"
                         }
                     }}
+                    path='/dashboard/profile/manage'
                 ></UserProfile>
             </div>
         </>
