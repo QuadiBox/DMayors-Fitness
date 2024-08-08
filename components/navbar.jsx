@@ -13,7 +13,6 @@ import {
 import { fetchAllDocuments } from '@/app/db/firestoreService';
 
 import { useUser } from '@clerk/nextjs';
-import { sendWelcomeEmail } from "@/utils/email";
 
 
 const navDrop = {
@@ -57,12 +56,6 @@ const Navbar = () => {
                 setOpenNavbar(true)
                 setopenMobileNav(true)
 
-                sendWelcomeEmail(
-                    'quadvox0@gmail.com',
-                    "We all at DMayor Fitness & Game hub warmly welcome you to our beautiful family",
-                    "Welcome to DMayor Fitness & Game Hub Family! 🏋️‍♂️🎮",
-                    "<h1>This is a test mail</h1>"
-                );
             } else if (e.target.className === "closeNavbarButton" || e.target.className === "icofont-close-line" || e.target.className === "sideNavbarCloseBtn" || e.target.className === "icofont-close") {
                 setOpenNavbar(false)
                 setopenMobileNav(false)
