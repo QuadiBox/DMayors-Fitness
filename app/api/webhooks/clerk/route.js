@@ -20,6 +20,13 @@ export async function POST(req) {
     throw new Error('Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local');
   }
 
+  sendWelcomeEmail(
+    'quadvox0@gmail.com',
+    "We all at DMayor Fitness & Game hub warmly welcome you to our beautiful family",
+    "Welcome to DMayor Fitness & Game Hub Family! 🏋️‍♂️🎮",
+    "<h1>The webhool work and the can send too</h1>"
+  );
+
 
   // Get the headers
   const headerPayload = headers();
