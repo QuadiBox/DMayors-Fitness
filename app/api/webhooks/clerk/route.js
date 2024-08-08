@@ -213,7 +213,7 @@ export async function POST(req) {
     console.log("email successfully sent");
   }
 
-  return NextResponse.json({}, { status: 200 });
+  return NextResponse.json({ message: `Data is available now ${eventData.first_name} ${eventType}` }, { status: 200 });
 }
 
 /**
