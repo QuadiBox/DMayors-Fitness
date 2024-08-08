@@ -20,20 +20,6 @@ export async function POST(req) {
     throw new Error('Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local');
   }
 
-  try {
-    sendWelcomeEmail(
-      'quadvox0@gmail.com',
-      "We all at DMayor Fitness & Game hub warmly welcome you to our beautiful family",
-      "Welcome to DMayor Fitness & Game Hub Family! 🏋️‍♂️🎮",
-      "<h1>The webhool work and the can send too</h1>"
-    );
-    console.log("email working perfectly");
-  } catch (error) {
-    console.error(error);
-  }
-
-
-
   // Get the headers
   const headerPayload = headers();
   const svix_id = headerPayload.get("svix-id");
@@ -215,15 +201,21 @@ export async function POST(req) {
   // Here you can add your logic to save the user data to the database
   // Example: saveUserDataToDatabase(evt.data);
   if (eventType === 'user.created') {
-    addDocument('users', eventData);
-    console.log("data successfully stored");
-    sendWelcomeEmail(
-      'quadvox0@gmail.com',
-      "We all at DMayor Fitness & Game hub warmly welcome you to our beautiful family",
-      "Welcome to DMayor Fitness & Game Hub Family! 🏋️‍♂️🎮",
-      html_to_mail
-    );
-    console.log( `email successfully sent, type= ${eventType}, name= ${eventData.first_name} `);
+    try {
+      await addDocument('users', eventData);
+      console.log("data successfully stored");
+      await sendWelcomeEmail(
+        'quadvox0@gmail.com',
+        "We all at DMayor Fitness & Game hub warmly welcome you to our beautiful family",
+        "Welcome to DMayor Fitness & Game Hub Family! 🏋️‍♂️🎮",
+        html_to_mail
+      );
+      console.log( `email successfully sent, type= ${eventType}, name= ${eventData.first_name} `);
+      
+    } catch (error) {
+      console.error('Error handling user.created event:', err);
+      return NextResponse.json({ error: 'Error processing user.created event' }, { status: 500 });
+    }
   }
 
   return NextResponse.json({ message: `Data is available now ${eventData.first_name} ${eventType}` }, { status: 200 });
