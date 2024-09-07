@@ -908,6 +908,7 @@ header{
 
     .unitExp{
         isolation: isolate;
+        height: 100vh;
     }
 
     .expImg{
@@ -931,6 +932,7 @@ header{
     
         display: none;
     }
+
 }
 
 .expdata p{
@@ -1069,8 +1071,9 @@ header{
 
     .grooveDisplay{
         gap: 2em;
-        background-attachment: none;
-        background-image: linear-gradient(to bottom, var(--opac-d03), var(--opac-d05)), url(/helpImg.jpg);
+        height: 100vh;
+        background-attachment: unset;
+        background-size: cover;
     }
 }
 
@@ -1698,7 +1701,7 @@ header{
 
 .homeSect6{
     width: 100%;
-    min-height: 100dvh;
+    min-height: 100vh;
     position: relative;
     background-color: var(--bgDark-clr1);
     display: flex;

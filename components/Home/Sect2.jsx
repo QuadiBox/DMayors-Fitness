@@ -52,6 +52,10 @@ const Sect2 = () => {
                 } else {
                   header.style.transform = "translate(0%, 0%)"
                 }
+            } else {
+              allExpImg.forEach((elem) => {
+                elem.style.position = 'absolute';
+              })
             }
 
         };
