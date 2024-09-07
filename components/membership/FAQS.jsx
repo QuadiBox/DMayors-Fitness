@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
-const FAQ = () => {
+const FAQMembership = ({ text }) => {
     const containerRef = useRef(null);
     const [activeFAQ, setActiveFAQ] = useState(-1);
 
@@ -19,7 +19,7 @@ const FAQ = () => {
     <section id='FAQ' className='FAQ'>
         <div className="questionCntn">
             <div className="leftFAQ">
-                <h2><span>F</span>requently <span>A</span>sked <span>Q</span>uestion<span>s</span></h2>
+                <h2><span>F</span>requently <span>A</span>sked <span>Q</span>uestion<span>s</span> {text && (<><br /> {text}</>)}</h2>
             </div>
             <div ref={containerRef} className="rightFAQ">
                 <div className="unitQuestion" style={{gridTemplateRows: `max-content ${activeFAQ === 0? "1fr": "0px"}`}}>
@@ -67,5 +67,5 @@ const FAQ = () => {
   )
 }
 
-export default FAQ
+export default FAQMembership
 

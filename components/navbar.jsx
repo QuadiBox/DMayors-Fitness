@@ -116,7 +116,7 @@ const Navbar = () => {
         };
     
         if (isLoaded || isSignedIn) {
-          handle_no_refrence_data();
+        //   handle_no_refrence_data();
         }
     
     }, [isLoaded, isSignedIn ]);
@@ -162,7 +162,7 @@ const Navbar = () => {
                                 <UserButton showName></UserButton>
                             </SignedIn>
                             <div className="leftTopDBar">
-                                <Link href={"/blog"}>HEALTH & WELLNESS BLOG</Link>
+                                <Link href={"/blogs"}>HEALTH & WELLNESS BLOG</Link>
                                 <Link href={"/events"}>EVENTS</Link>
                                 <a className="social" href="https://x.com/Dmayorfithub"><svg width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.5983 18.31L27.8524 10.8999H26.3704L20.9399 17.3339L16.6026 10.8999H11.6L18.1589 20.6293L11.6 28.3999H13.0821L18.8168 21.6053L23.3974 28.3999H28.4L21.5979 18.31H21.5983ZM19.5683 20.715L18.9037 19.7462L13.6161 12.0371H15.8926L20.1597 18.2586L20.8243 19.2274L26.3711 27.3144H24.0946L19.5683 20.7154V20.715Z" fill="inherit"/>
@@ -191,39 +191,34 @@ const Navbar = () => {
 
         </AnimatePresence>
         
-        {
-            openMobileNav && (
-                <motion.div className="mobileSideNavCntn">
-                    <div className="mobileSideNav">
-                        <div className="topSectSideNav">
-                            <>
-                                <SignedIn>
-                                    <h2>
-                                        <UserButton showName></UserButton>
-                                    </h2>
-                
-                                    <p><span>{data && data !== "" ? data?.userData?.id : "101010"}</span> | <span>{data && data !== "" ? data?.planData?.name : "No Active Plan"}</span></p>
-                                </SignedIn> 
-                                <SignedOut>
-                                    <p><SignInButton mode="modal"></SignInButton> | <SignUpButton mode="modal"></SignUpButton></p>
-                                </SignedOut>
-                            </>
-                        </div>
-                        <div className="bottomSectSideNav">
-                            <Link href={"/about"}>About</Link>
-                            <Link href={"/membership"}>Membership</Link>
-                            <Link href={`${openMobileNav ? "/dashboard" : "/dashboard_admin"}`}>Dashboard</Link>
-                            <Link href={"/game_hub"}>Game.Hub</Link>
-                            <a href="#FAQs">FAQs</a>
 
-                        </div>
-                    </div>
-                    <div className="buttonCntn">
-                        <button type="button" className="sideNavbarCloseBtn"><i className="icofont-close"></i></button>
-                    </div>
-                </motion.div>
-            )
-        }
+        <motion.div className={`mobileSideNavCntn ${openMobileNav ? "" : "hide"}`}>
+            <div className="mobileSideNav">
+                <div className="topSectSideNav">
+                    <>
+                        <SignedIn>
+                            <h2>{user?.fullName}</h2>
+        
+                            <p><span>{data && data !== "" ? data?.userData?.id : "101010"}</span> | <span>{data && data !== "" ? data?.planData?.name : "No Active Plan"}</span></p>
+                        </SignedIn> 
+                        <SignedOut>
+                            <p><SignInButton mode="modal"></SignInButton> | <SignUpButton mode="modal"></SignUpButton></p>
+                        </SignedOut>
+                    </>
+                </div>
+                <div className="bottomSectSideNav">
+                    <Link href={"/about"}>About</Link>
+                    <Link href={"/membership"}>Membership</Link>
+                    <Link href={`${"/dashboard"}`}>Dashboard</Link>
+                    <Link href={"/game_hub"}>Game.Hub</Link>
+                    <a href="#FAQs">FAQs</a>
+
+                </div>
+            </div>
+            <div className="buttonCntn">
+                <button type="button" className="sideNavbarCloseBtn"><i className="icofont-close"></i></button>
+            </div>
+        </motion.div>
 
     </header>
   )

@@ -1,12 +1,11 @@
 import Sect2 from "@/components/Home/Sect2";
 import Sect4 from "@/components/Home/Sect4";
 import Sect5 from "@/components/Home/Sect5";
-import FAQ from "@/components/Home/Faq";
-import ImageTransit from "@/components/imageTransit";
 import Navbar from "@/components/navbar";
 import Link from "next/link";
 import Footer from "@/components/Home/Footer";
 import HeroSectBg from "@/components/Home/HeroSectBg";
+import FAQGeneral from "@/components/Home/Faq";
 
 
 
@@ -66,7 +65,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <FAQ></FAQ>
+        <FAQGeneral></FAQGeneral>
         <Footer></Footer>
       </div>
     </main>

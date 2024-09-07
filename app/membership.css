@@ -18,6 +18,8 @@
     --dark-clr2: #00180e;
 
     --bgDark-clr1: #0f0f0a;
+    --bgDark-clr2: #20201b;
+    --bgDark-clr3: #24241e;
 
     --opac-p01: #b5b13f24;
     --opac-p03: #fcf53a3c;
@@ -468,4 +470,156 @@
     width: 100%;
     height: 40px;
     background-color: transparent;
+}
+
+/***** ABOUT PAGE STYLING STARTS HERE****/
+
+.membershipFisrtSect.about{
+    background-position: center;
+    background-image: url(/about_3.jpg);
+    width: 100%;
+}
+
+.about_Sect2{
+    width: 100%;
+    padding: 6em var(--padding-gen);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    background-color: var(--deep-gray01);
+    border-bottom: 1px solid var(--opac-w01);
+}
+
+.about_Sect2 p{
+    text-align: center;
+    color: var(--white-clr1);
+    font-weight: 400;
+    font-size: 1.35em;
+    max-width: 90ch;
+}
+
+.about_Sect2 p span{
+    color: var(--lightgreen-clr);
+    font-size: 1.1em;
+}
+
+.about_Sect3{
+    background-color: var(--bgDark-clr2);
+    padding: 4em var(--padding-gen);
+    min-height: 100vh;
+}
+.about_Sect3.flipped{
+    background-color: var(--bgDark-clr3);
+    padding: 4em var(--padding-gen);
+    min-height: 100vh;
+}
+
+.unit_aboutDeatil{
+    width: 100%;
+    padding-block: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8%;
+}
+
+
+.about_left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about_left h2{
+    font-family: var(--font-r);
+    color: var(--lightgreen-clr);
+    font-weight: 100;
+    font-size: 2.2em;
+}
+.about_left p{
+    color: var(--white-clr1);
+    font-weight: 200;
+    font-size: 1.32em;
+}
+
+.about_img{
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    filter: grayscale(0.2);
+    border-radius: 3px;
+
+    position: relative;
+}
+
+@media screen and (max-width: 600px){
+    .membershipFisrtSect{
+        background-size: cover;
+        background-position: center;
+        animation: none;
+        height: 60vh;
+    }
+    .membershipFisrtSect h1{
+        font-size: 12vw;
+        display: block;
+        letter-spacing: 10px;
+    }
+    .membershipFisrtSect.about h1{
+        font-size: 20vw;
+        letter-spacing: 15px;
+    }
+
+    .about_Sect2 p{
+        text-align: center;
+        color: var(--white-clr1);
+        font-weight: 400;
+        font-size: 1.35em;
+        max-width: 100%;
+    }
+
+    .unit_aboutDeatil{
+        width: 100%;
+        padding-block: 4em;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .flipped .unit_aboutDeatil{
+        flex-direction: column;
+    }
+
+    .about_img{
+        width: 100%;
+        min-height: 500px;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        filter: grayscale(0.2);
+        border-radius: 3px;
+
+        position: relative;
+    }
+}
+
+.about_img::after{
+    position: absolute;
+    top: -6%;
+    left: 4%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 2px dashed var(--lightgreen-clr);
+    /* border: 2px dashed var(--opac-p05); */
 }

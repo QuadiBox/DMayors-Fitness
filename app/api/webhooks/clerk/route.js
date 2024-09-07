@@ -87,6 +87,10 @@ export async function POST(req) {
         .container p{
           font-weight: 400px;
         }
+        .container .first_p{
+          font-weight: 600;
+          font-size: 1.17em;
+        }
 
         .header {
             text-align: center;
@@ -108,7 +112,8 @@ export async function POST(req) {
 
         .header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 30px;
+            font-size: 1.5em;
             color: #F2FEDC;
             color: #1b1800;
         }
@@ -124,6 +129,8 @@ export async function POST(req) {
 
         .content p {
             line-height: 1.6;
+            font-weight: 400;
+            font-size: 1em;
         }
 
         .content p a{
@@ -149,11 +156,39 @@ export async function POST(req) {
         .footer {
             text-align: center;
             padding: 10px 0;
-            font-size: 14px;
+            font-size: 0.9em;
             color: #666;
         }
+        .bannerSection{
+          padding: 30px 0px;
+          width: 100%;
+          overflow: hidden;
+          display: grid;
+          gap: 10px;
+          background-color: #2a2924;
+          border-radius: 7px;
+        }
+        .bannerSection h2{
+            margin-bottom: 25px;
+            width: 100%;
+            font-size: 1.6em;
+            color: rgb(255, 254, 248);
+            font-weight: 400;
+            width: 100%;
+            text-align: center;
+        }   
+        .bannerSection a{
+            margin-bottom: 5px;
+            width: 100%;
+            font-size: 0.96em;
+            color: #C0BA82;
+            font-weight: 400;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+        }  
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 370px) {
             body {
                 font-size: 13px;
             }
@@ -169,11 +204,11 @@ export async function POST(req) {
 <body>
     <div class="container">
         <div class="header">
-            <a href="${process.env.NEXT_PUBLIC_BASE_URL}/dmayorLogo.png"><img src="./dmayorLogo.png" alt="Dmayor Fitness Logo"></a>
+            <a href="${process.env.NEXT_PUBLIC_BASE_URL}"><img src="${process.env.NEXT_PUBLIC_BASE_URL}/dmayorLogo.png" alt="Dmayor Fitness Logo"></a>
             <h1>Welcome to DMayor Fitness & Game Hub! 🏋️‍♂️🎮</h1>
         </div>
         <div class="content">
-            <p>Dear ${eventData.first_name},</p>
+            <p class="first_p">Dear ${eventData.first_name},</p>
             <p>Welcome to the DMayor Fitness & Game Hub family! We're thrilled to have you join us on this exciting journey toward a healthier, stronger, and more vibrant you.</p>
             <p>At DMayor Fitness & Game Hub, we believe in more than just workouts and routines. We believe in creating a supportive, uplifting community where every member feels like family. Whether you're here to lift weights, join a fitness class, or enjoy our game hub, you're now part of a family that inspires and motivates each other every step of the way.</p>
             <p>To kickstart your fitness journey, we invite you to explore our range of subscription options tailored to fit your goals and lifestyle. By subscribing, you'll gain access to exclusive content, personalized workout plans, and a community of like-minded individuals who are as passionate about fitness as you are.</p>
@@ -193,6 +228,13 @@ export async function POST(req) {
         <div class="footer">
             <p> <strong>Warm regards,</strong><br>The DMayor Fitness & Game Hub Team</p>
         </div>
+        <div class="bannerSection">
+            <h2>Need a hand getting started?</h2>
+
+            <a href="${process.env.NEXT_PUBLIC_BASE_URL}/contact">Our friendly Customer Support team is available 24/7 →</a>
+            <a href="${process.env.NEXT_PUBLIC_BASE_URL}/faqs">Visit the knowledgebase for answers to your questions →</a>
+            <a href="${process.env.NEXT_PUBLIC_BASE_URL}/about">Why choose Dmayor Fitness as your go-to health & wellness hub? →</a>
+        </div>
     </div>
 </body>
 </html>
@@ -203,14 +245,13 @@ export async function POST(req) {
   if (eventType === 'user.created') {
     try {
       await addDocument('users', eventData);
-      console.log("data successfully stored");
       await sendWelcomeEmail(
-        'quadvox0@gmail.com',
+        `"DMayor Fitness & Game Hub" <${process.env.EMAIL_NAME}>`,
+        eventData?.emailAddresses[eventData?.emailAddresses.length - 1].emailAddress,
         "We all at DMayor Fitness & Game hub warmly welcome you to our beautiful family",
         "Welcome to DMayor Fitness & Game Hub Family! 🏋️‍♂️🎮",
         html_to_mail
       );
-      console.log( `email successfully sent, type= ${eventType}, name= ${eventData.first_name} `);
       
     } catch (error) {
       console.error('Error handling user.created event:', err);

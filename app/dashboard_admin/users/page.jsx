@@ -2,7 +2,23 @@ import Link from 'next/link';
 import { fetchAllDocuments } from '@/app/db/firestoreService';
 import SubsClient from './SubsClient';
 
-
+export const metadata = {
+    title: 'Profiles | Dashboard | DMayor Fitness & Game Hub',
+    description: "Access your personal dashboard at DMayor Fitness & Game Hub. Manage your profile, track your progress & subscriptions, and stay engaged.",
+    openGraph: {
+      type: "website",
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/dashboard_admin/users`,
+      title: 'DMayor Fitness Dashboard',
+      description: 'Manage your profiles, track your fitness journey, and stay engaged with the DMayor Fitness & Game Hub Dashboard.',
+    },
+    twitter: {
+      card: "Profiles - Dashboard",
+      creator: "@QuadVox",
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/dashboard_admin/users`,
+      title: 'Your Profile | DMayor Fitness',
+      description: 'Keep track of your progress and manage your profile with the DMayor Fitness & Game Hub Dashboard.',
+    },
+}
 
 const Page = async () => {
 

@@ -2,7 +2,23 @@ import { currentUser } from '@clerk/nextjs/server';
 import Link from 'next/link';
 import { fetchAllDocuments } from '@/app/db/firestoreService';
 
-
+export const metadata = {
+    title: 'Your Dashboard | DMayor Fitness & Game Hub',
+    description: "Access your dashboard at DMayor Fitness & Game Hub. Manage your user profiles, track your progress & subscriptions, and stay engaged.",
+    openGraph: {
+      type: "website",
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/dashboard_admin`,
+      title: 'DMayor Fitness Dashboard',
+      description: 'Manage your profile, track your fitness journey, and stay engaged with the DMayor Fitness & Game Hub Dashboard.',
+    },
+    twitter: {
+      card: "Dashboard",
+      creator: "@QuadVox",
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/dashboard_admin`,
+      title: 'Your Profile | DMayor Fitness',
+      description: 'Keep track of your progress and manage your profiles with the DMayor Fitness & Game Hub Dashboard.',
+    },
+}
 
 const Page = async () => {
     const user = await currentUser();

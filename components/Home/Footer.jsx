@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SignedIn, SignedOut } from '@clerk/nextjs'
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
                 <a className="social" href="https://www.instagram.com/dmayorfitness?igshid=NzZlODBkYWE4Ng%3D%3D"><svg width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd" d="M20.0416 24.8745C17.3618 24.8745 15.1885 22.6942 15.1885 20.0215C15.1885 17.3488 17.3689 15.1684 20.0416 15.1684C22.7143 15.1684 24.8946 17.3488 24.8946 20.0215C24.8946 22.6942 22.7143 24.8745 20.0416 24.8745ZM20.0416 16.0335C17.8401 16.0335 16.0536 17.82 16.0536 20.0215C16.0536 22.2229 17.8401 24.0094 20.0416 24.0094C22.243 24.0094 24.0295 22.2229 24.0295 20.0215C24.0295 17.82 22.236 16.0335 20.0416 16.0335Z" fill="inherit"/>
                         <path d="M26.2309 14.8937C26.2309 15.5502 25.6988 16.0823 25.0423 16.0823C24.3858 16.0823 23.8537 15.5502 23.8537 14.8937C23.8537 14.2372 24.3858 13.7051 25.0423 13.7051C25.6988 13.7051 26.2309 14.2372 26.2309 14.8937Z" fill="inherit"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4656 29.3332H15.8004C12.966 29.3332 10.666 27.0262 10.666 24.1988V15.8009C10.666 12.9664 12.973 10.6665 15.8004 10.6665H24.4656C27.3 10.6665 29.607 12.9735 29.607 15.8009V24.1988C29.5999 27.0262 27.293 29.3332 24.4656 29.3332ZM15.7934 11.5246C13.4372 11.5246 11.5241 13.4377 11.5241 15.7939V24.1917C11.5241 26.5479 13.4372 28.461 15.7934 28.461H24.4585C26.8147 28.461 28.7278 26.5479 28.7278 24.1917V15.7939C28.7278 13.4377 26.8147 11.5246 24.4585 11.5246H15.7934Z" fill="inherit"/>
+                        <path fillRule="evenodd" clipRule="evenodd" d="M24.4656 29.3332H15.8004C12.966 29.3332 10.666 27.0262 10.666 24.1988V15.8009C10.666 12.9664 12.973 10.6665 15.8004 10.6665H24.4656C27.3 10.6665 29.607 12.9735 29.607 15.8009V24.1988C29.5999 27.0262 27.293 29.3332 24.4656 29.3332ZM15.7934 11.5246C13.4372 11.5246 11.5241 13.4377 11.5241 15.7939V24.1917C11.5241 26.5479 13.4372 28.461 15.7934 28.461H24.4585C26.8147 28.461 28.7278 26.5479 28.7278 24.1917V15.7939C28.7278 13.4377 26.8147 11.5246 24.4585 11.5246H15.7934Z" fill="inherit"/>
                     </svg>
                 </a>
                 <a href="https://t.me/Ekiti1">
@@ -27,8 +28,8 @@ const Footer = () => {
         </div>
         <div className="faller">
             <div className="leftFaller">
-                <Link href={"/signup"} className="unitoptionFaller"><p>Game.Hub</p></Link>
-                <Link href={"/signin"} className="unitoptionFaller"><p>Trainers</p></Link>
+                <Link href={"/game_hub"} className="unitoptionFaller"><p>Game.Hub</p></Link>
+                <Link href={"/trainers"} className="unitoptionFaller"><p>Trainers</p></Link>
                 <Link href={"/faqs"} className="unitoptionFaller"><p>FAQs</p></Link>
                 <Link href={"/blogs"} className="unitoptionFaller"><p>Blogs</p></Link>
                 <Link href={"/contact"} className="unitoptionFaller"><p>Contact</p></Link>
@@ -41,7 +42,7 @@ const Footer = () => {
                         <Link href={"/game_hub"}>Game Hub</Link>
                         <Link href={"/trainers"}>Trainers</Link>
                         <Link href={"/events"}>Events</Link>
-                        <Link href={"/events"}>Blogs</Link>
+                        <Link href={"/blogs"}>Blogs</Link>
                         <Link href={"/jobs"}>Jobs</Link>
                     </div>
                     <div className="address_1">
@@ -50,20 +51,26 @@ const Footer = () => {
                         <Link href={"/contact"}>Contact</Link>
                         <Link href={"/policy/membership"}>Membership policy</Link>
                         <Link href={"/policy/privacy"}>Privacy policy</Link>
+                        <Link href={"/policy/membership_guidelines"}>Membership Guidelines</Link>
+                        <Link href={"/policy/terms_of_use"}>Terms of use</Link>
                         <Link href={"/faqs"}>FAQs</Link>
                     </div>
                     <div className="address_1">
                         <h5>Accounts</h5>
-                        <Link href={"/sign_in"}>Sign in</Link>
-                        <Link href={"/sign_up"}>Sign up</Link>
-                        <Link href={"/dashboard"}>Dashboard</Link>
+                        <SignedIn>
+                            <Link href={"/dashboard"}>Dashboard</Link>
+                        </SignedIn>
+                        <SignedOut>
+                            <Link href={"/sign-in"}>Sign in</Link>
+                            <Link href={"/sign-up"}>Sign up</Link>
+                        </SignedOut>
                     </div>
                 </div>
             </div>
             <div className='fancyBoxCntn'>
                 <div className="rightfaller fancybg">
                     <h4>Get Started With DMayor</h4>
-                    <Link href={"/sign_up"} className='specBtn borderBtn'>Join Us</Link>
+                    <Link href={"/sign-in"} className='specBtn borderBtn'>Join Us</Link>
                 </div>
             </div>
         </div>
@@ -81,7 +88,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="thirdfooterSect">
-            <p>Copyright © 2023 - 2024 Dmayorsfitnesshub.com All rights reserved.</p>
+            <p>Copyright © 2023 - 2024 {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} All rights reserved.</p>
             <p>#NOJUDGEMENT</p>
         </div>
     </footer>

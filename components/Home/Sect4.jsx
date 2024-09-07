@@ -6,7 +6,7 @@ const Sect4 = () => {
         <h2>HEALTH & WELLNESS BLOGS</h2>
 
         <div className="blogShowcaseCntn">
-            <Link href={"/"} className="unitBlogCntn">
+            <Link href={"/blogs/001"} className="unitBlogCntn">
                 <div className="topBlogImg"></div>
                 <div className="bottomBlogData">
                     <h3>Unraveling the Mysteries of Macronutrients: Your Guide to Healthier Eating</h3>
@@ -15,7 +15,7 @@ const Sect4 = () => {
                     <div className="blogiconholder"><i className="icofont-culinary"></i></div>
                 </div>
             </Link>
-            <Link href={"/"} className="unitBlogCntn">
+            <Link href={"/blogs/002"} className="unitBlogCntn">
                 <div className="topBlogImg"></div>
                 <div className="bottomBlogData">
                     <h3>Top 4 Strategies for Staying Motivated and Consistent with Your Gym Routine</h3>
@@ -24,7 +24,7 @@ const Sect4 = () => {
                     <div className="blogiconholder"><i className="icofont-gym"></i></div>
                 </div>
             </Link>
-            <Link href={"/"} className="unitBlogCntn">
+            <Link href={"/blogs/003"} className="unitBlogCntn">
                 <div className="topBlogImg"></div>
                 <div className="bottomBlogData">
                     <h3>Busting Common Fitness Myths: Get the Facts and Improve Your Fitness Journey at DMayor Fitness Hub</h3>

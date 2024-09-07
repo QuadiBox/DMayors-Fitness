@@ -24,6 +24,7 @@ const transporter = nodemailer.createTransport({
  * 
  * This function uses Nodemailer to send an email with a customizable subject and HTML body.
  * 
+ * @param {string} to - The sender's email address or a string of anything entirely that indicates where the mail is coming from.
  * @param {string} to - The recipient's email address. This can be a single email address, a comma-separated string, or an array of email addresses.
  * @param {string} text - The text line of the email. This is what appears with the subject in the gmail notification and if the receiver mail doesn't render html.
  * @param {string} subject - The subject line of the email. This is what appears as the email's subject.
@@ -34,9 +35,9 @@ const transporter = nodemailer.createTransport({
  * @throws {Error} - Throws an error if there is an issue sending the email, such as connection issues or invalid email addresses.
  */
 
-export async function sendWelcomeEmail(to, text, subject, html) {
+export async function sendWelcomeEmail(from, to, text, subject, html) {
   const mailOptions = {
-    from: `"DMayor Fitness & Game Hub" <${process.env.EMAIL_NAME}>`, // sender address
+    from, // sender address
     to, // list of receivers
     text,
     subject, // Subject line
