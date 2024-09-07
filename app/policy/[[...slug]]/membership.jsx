@@ -114,7 +114,7 @@ const Membership = () => {
             updated at our sole discretion.
           </p>
           <p>
-            - <b>DMayor Fitness Fee Schedule ~ </b>DMayor Fitness' fees are
+            - <b>DMayor Fitness Fee Schedule ~ </b>DMayor Fitness&apos; fees are
             charged to the financial account associated with the Monthly Payment
             Method on file for dues payments within three (3) business days of a
             membership change.

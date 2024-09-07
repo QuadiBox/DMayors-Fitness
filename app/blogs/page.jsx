@@ -32,7 +32,7 @@ const Event = () => {
                 </section>
                 <section className="topicsCntn">
                     <div className="topics">
-                        <h2>Welcome to the DMayor Fitness Blog! Here you'll find a treasure trove of informative and inspiring articles designed to fuel your fitness journey. Explore a variety of topics, from workout tips and nutrition advice to motivational stories and success stories from our members. Dive into our collection of engaging blog articles and discover the valuable insights that will empower you to achieve your fitness goals.</h2>
+                        <h2>Welcome to the DMayor Fitness Blog! Here you&apos;ll find a treasure trove of informative and inspiring articles designed to fuel your fitness journey. Explore a variety of topics, from workout tips and nutrition advice to motivational stories and success stories from our members. Dive into our collection of engaging blog articles and discover the valuable insights that will empower you to achieve your fitness goals.</h2>
                         <Link href={"/blogs/001"} className="fancyBorderClass unitTopicCntn">
                             <div className="unitTopic">
                                 <div className="topBlogImg"><img src="/food_1.jpeg" alt="food image" /></div>

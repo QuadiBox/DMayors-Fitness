@@ -30,7 +30,7 @@ const Game_hub = () => {
                     <HeroSectBg src={"/gamebg_1.jpg"}></HeroSectBg>
                     <div className="about_Hero_Text_Cntn">
                         <p>Welcome To The Game Hub</p>
-                        <h1>IT'S GAME TIME!!!</h1>
+                        <h1>IT&apos;S GAME TIME!!!</h1>
 
                         <button className="heroDownScroller" type="button"><i className="icofont-dotted-down"></i></button>
                         <div className="locationCard"><i className="icofont-map-pins"></i>32 Mafemi Crescent Utako, Abuja, Nigeria.</div>

@@ -65,7 +65,7 @@ const Page = () => {
                                 <h2>Myth 3: &quot;Weight lifting makes you bulky&quot;</h2>
                                 <p>Fear of appearing overly muscular or bulky deters many from weight lifting.</p>
 
-                                <p>Fact: Weight lifting can actually help you achieve a lean, toned physique and boost your metabolic rate. Sweat FXBG's approach to weight training includes diverse exercises tailored to suit your individual fitness goals and body type.</p>
+                                <p>Fact: Weight lifting can actually help you achieve a lean, toned physique and boost your metabolic rate. DMayor Fitness&apos; approach to weight training includes diverse exercises tailored to suit your individual fitness goals and body type.</p>
                             </div>
                             <div className="unitBlogSection">
                                 <h2>Myth 4: &quot;Cardio is the best way to lose weight&quot;</h2>
@@ -77,7 +77,7 @@ const Page = () => {
                                 <h2>Myth 5: &quot;The more you sweat, the more fat you lose&quot;</h2>
                                 <p>Sweat is often mistaken as an indicator of calorie or fat burn.</p>
 
-                                <p><b>Fact:</b> Sweating is actually your body's way of regulating temperature and is not directly related to fat loss. At DMayor Fitness, we measure workout success through performance improvement and wellbeing, not sweat production.</p>
+                                <p><b>Fact:</b> Sweating is actually your body&apos;s way of regulating temperature and is not directly related to fat loss. At DMayor Fitness, we measure workout success through performance improvement and wellbeing, not sweat production.</p>
                             </div>
                             <div className="unitBlogSection">
                                 <h2>The Role of Knowledge in Fitness</h2>

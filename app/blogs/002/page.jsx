@@ -54,7 +54,7 @@ const Page = () => {
                             </div>
                             <div className="unitBlogSection">
                                 <h2>Embrace Variety and Progression</h2>
-                                <p>To keep your workouts exciting and prevent plateaus, it's important to embrace variety and progression in your training routine. Experiment with different exercises, training methods, and class formats to challenge your body in new and different ways. Incorporate a mix of cardiovascular exercises, strength training, and flexibility workouts to ensure a well-rounded fitness regimen. Try different workout styles like <b>HIIT</b>, <b>Cycle</b>, or <b>Pilates</b> to keep things fresh and engaging. Additionally, gradually increase the intensity, duration, or load of your exercises over time to promote continuous improvement and avoid stagnation. This could involve adding more weight, increasing repetitions or sets, extending workout duration, or incorporating advanced variations of exercises. By constantly challenging yourself, you'll continue to make progress and see improvements in your fitness levels.</p>
+                                <p>To keep your workouts exciting and prevent plateaus, it&apos;s important to embrace variety and progression in your training routine. Experiment with different exercises, training methods, and class formats to challenge your body in new and different ways. Incorporate a mix of cardiovascular exercises, strength training, and flexibility workouts to ensure a well-rounded fitness regimen. Try different workout styles like <b>HIIT</b>, <b>Cycle</b>, or <b>Pilates</b> to keep things fresh and engaging. Additionally, gradually increase the intensity, duration, or load of your exercises over time to promote continuous improvement and avoid stagnation. This could involve adding more weight, increasing repetitions or sets, extending workout duration, or incorporating advanced variations of exercises. By constantly challenging yourself, you&apos;ll continue to make progress and see improvements in your fitness levels.</p>
                             </div>
                             <div className="unitBlogSection">
                                 <h2>Find Workout Buddies and Accountability Partners</h2>
@@ -70,7 +70,7 @@ const Page = () => {
                             </div>
                             <div className="unitBlogSection">
                                 <h2>Tips for Overcoming Challenges and Staying Motivated in Your Gym Routine</h2>
-                                <p>By implementing these strategies, you can overcome common challenges and stay motivated and consistent in your gym routine. With clear goals, variety and progression, supportive workout buddies, and solutions to common hurdles, you'll be well-equipped to achieve your health and fitness goals and maintain a fulfilling gym experience.</p>
+                                <p>By implementing these strategies, you can overcome common challenges and stay motivated and consistent in your gym routine. With clear goals, variety and progression, supportive workout buddies, and solutions to common hurdles, you&apos;ll be well-equipped to achieve your health and fitness goals and maintain a fulfilling gym experience.</p>
                             </div>
                             <div className="nextPrev">
                                 <Link href={"/blogs/001"} className="n_p prev"><i class="icofont-rounded-left"></i> Go Prev</Link>

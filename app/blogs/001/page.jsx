@@ -79,7 +79,7 @@ const Page = () => {
 
                                 <p>In the great food journey, let&apos;s not get too bogged down with the numbers and forget the fundamental rule of nutrition - eat a variety of foods, packed full of the good stuff, and enjoy what you eat.</p>
 
-                                <p>Stay tuned for more nutrition insights from us at DMayor Fitness, and remember, whether you're spinning, lifting, jumping, or squatting - your food is fueling you every step of the way. You've got this!</p>
+                                <p>Stay tuned for more nutrition insights from us at DMayor Fitness, and remember, whether you&apos;re spinning, lifting, jumping, or squatting - your food is fueling you every step of the way. You&apos;ve got this!</p>
                             </div>
                             <div className="nextPrev">
                                 <Link href={"/blogs/002"} className="n_p next">Up Next <i class="icofont-rounded-right"></i></Link>

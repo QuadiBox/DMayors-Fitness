@@ -28,7 +28,7 @@ const Privacy = () => {
                 <div className="unitPolicy">
                     <h2>III. How do we use your email information?</h2>
                     <p>
-                    At DMayor Fitness we respect your concerns about privacy. We collect email information to provide a more personalized and relevant experience. If you give us your email address when you inquire about membership, request a free trial guest pass, or sign up, we will send you emails about exclusive offers, news at DMayor Fitness and new club openings. If you have previously opted out of receiving emails from us, providing updated information will act as an 'opt back-in'. If you want to opt-out of receiving promotional emails, simply click on the unsubscribe link located on the bottom of all of our emails. Although we strive to update our email list as frequently as possible, you might receive another contact before we are able to remove you. Please note that you will continue to receive Member Services related communications as it pertains to your member account. DMayor Fitness may use any of your contact information held on file (including Email, Mailing, Phone & Fax) to communicate with you in relation to day to day administrative activities, such as freeze requests, online purchases and important service alerts.
+                    At DMayor Fitness we respect your concerns about privacy. We collect email information to provide a more personalized and relevant experience. If you give us your email address when you inquire about membership, request a free trial guest pass, or sign up, we will send you emails about exclusive offers, news at DMayor Fitness and new club openings. If you have previously opted out of receiving emails from us, providing updated information will act as an &apos;opt back-in&apos;. If you want to opt-out of receiving promotional emails, simply click on the unsubscribe link located on the bottom of all of our emails. Although we strive to update our email list as frequently as possible, you might receive another contact before we are able to remove you. Please note that you will continue to receive Member Services related communications as it pertains to your member account. DMayor Fitness may use any of your contact information held on file (including Email, Mailing, Phone & Fax) to communicate with you in relation to day to day administrative activities, such as freeze requests, online purchases and important service alerts.
                     </p>
                 </div>
                 <div className="unitPolicy">
@@ -49,7 +49,7 @@ const Privacy = () => {
                 </div>
                 <div className="unitPolicy">
                     <h2>VI. Do we use cookies?</h2>
-                    <p>We use cookies to enhance your experience on our web site. For example, a cookie enables us to remember the region you visited from. You can set your Internet browser (like Chrome, Firefox, Safari or Internet Explorer) to warn you every time a cookie is sent, or to turn off all cookies. See your browser's Help menu for these instructions. By disabling your cookies you will not have access to some of the features that enhance your user experience on our site.
+                    <p>We use cookies to enhance your experience on our web site. For example, a cookie enables us to remember the region you visited from. You can set your Internet browser (like Chrome, Firefox, Safari or Internet Explorer) to warn you every time a cookie is sent, or to turn off all cookies. See your browser&apos;s Help menu for these instructions. By disabling your cookies you will not have access to some of the features that enhance your user experience on our site.
                     </p>
                 </div>
                 <div className="unitPolicy">
@@ -59,7 +59,7 @@ const Privacy = () => {
                 </div>
                 <div className="unitPolicy">
                     <h2>VIII. Does this Privacy Policy apply to external links found on this Web site?</h2>
-                    <p>While this site may contain links to other sites, please note that when you click on one of these links, you are 'clicking' away from {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} to another Web site. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours. We are not responsible for the privacy practices or the content of such Web sites.
+                    <p>While this site may contain links to other sites, please note that when you click on one of these links, you are &apos;clicking&apos; away from {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} to another Web site. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours. We are not responsible for the privacy practices or the content of such Web sites.
                     </p>
                 </div>
                 <div className="unitPolicy">

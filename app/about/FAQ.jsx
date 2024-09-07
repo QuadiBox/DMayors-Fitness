@@ -28,7 +28,7 @@ const FAQAbout = ({ text }) => {
                         <i className="icofont-thin-down" style={{rotate: `${activeFAQ === 0? "180deg": "0deg"}`}}></i>
                     </div>
                     <div className="answerBody">
-                        <p>At DMayor, it&apos;s all about #NOJUDGEMENT. We combine fitness and fun in a way that&apos;s inclusive, supportive, and tailored to every individual. Whether you're lifting weights, playing games, or just looking to connect, our vibrant community makes every visit an uplifting experience.</p>
+                        <p>At DMayor, it&apos;s all about #NOJUDGEMENT. We combine fitness and fun in a way that&apos;s inclusive, supportive, and tailored to every individual. Whether you&apos;re lifting weights, playing games, or just looking to connect, our vibrant community makes every visit an uplifting experience.</p>
                     </div>
                 </div>
                 <div className="unitQuestion" style={{gridTemplateRows: `max-content ${activeFAQ === 1? "1fr": "0px"}`}}>
@@ -73,7 +73,7 @@ const FAQAbout = ({ text }) => {
                         <i className="icofont-thin-down" style={{rotate: `${activeFAQ === 5? "180deg": "0deg"}`}}></i>
                     </div>
                     <div className="answerBody">
-                        <p>Absolutely! DMayor is all about family vibes, and we welcome members of all ages. We offer programs and activities for kids, teens, and adults alike, so everyone can join in the fun. Fitness is more than just exercise - it's a family affair at DMayor!</p>
+                        <p>Absolutely! DMayor is all about family vibes, and we welcome members of all ages. We offer programs and activities for kids, teens, and adults alike, so everyone can join in the fun. Fitness is more than just exercise - it&apos;s a family affair at DMayor!</p>
                     </div>
                 </div>
                 <p>Have more questions? <Link href="/contact"> Contact Us</Link></p>
