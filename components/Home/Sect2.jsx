@@ -52,10 +52,6 @@ const Sect2 = () => {
                 } else {
                   header.style.transform = "translate(0%, 0%)"
                 }
-            } else {
-                allExpImg.forEach((elem) => {
-                    elem.style.position = 'absolute';
-                })
             }
 
         };
@@ -63,13 +59,13 @@ const Sect2 = () => {
         window.addEventListener('scroll', handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener('scroll', handleScroll);
         };
     }, [isSmallScreen]);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(prev => !prev);
+          setIsSmallScreen(prev => !prev);
         };
 
         window.addEventListener('resize', handleResize);

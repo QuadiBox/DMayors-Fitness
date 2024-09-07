@@ -751,7 +751,7 @@ header{
 .homeSect2{
     width: 100%;
     padding-block: 8em 0em;
-
+    background-color: var(--bgDark-clr1);
 }
 
 .topHomeSect2{
@@ -761,7 +761,6 @@ header{
     gap: 1em;
     align-items: center;
     justify-content: center;
-    background-color: var(--bgDark-clr1);
 }
 
 .topHomeSect2 h2{
@@ -1071,6 +1070,7 @@ header{
     .grooveDisplay{
         gap: 2em;
         background-attachment: none;
+        background-image: linear-gradient(to bottom, var(--opac-d03), var(--opac-d05)), url(/helpImg.jpg);
     }
 }
 
