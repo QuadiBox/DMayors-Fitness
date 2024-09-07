@@ -277,6 +277,8 @@ main{
       display: flex;
       flex-direction: column;
       gap: 30px;
+      height: max-content;
+      overflow: hidden;
     }
   
     .grid_unit{
@@ -284,17 +286,12 @@ main{
         background-size: cover;
     }
 
-    
     .grid_unit:hover{
         background-size: cover;
     }
-    .grid_unit.horizontal{
+    .grid_unit{
         width: 100%;
-        aspect-ratio: 10/16;
-    }
-    .grid_unit.vertical{
-        width: 100%;
-        aspect-ratio: 10/18;
+        aspect-ratio: 16/10;
     }
 }
   

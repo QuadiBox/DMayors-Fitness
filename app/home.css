@@ -551,6 +551,7 @@ header{
     font-size: 3em;
     margin-inline: auto;
     background-color: transparent;
+    color: var(--lightgreen-clr);
 }
 
 /****THE HEADER STYLING - ENDS****/
@@ -750,6 +751,7 @@ header{
 .homeSect2{
     width: 100%;
     padding-block: 8em 0em;
+
 }
 
 .topHomeSect2{
@@ -759,6 +761,7 @@ header{
     gap: 1em;
     align-items: center;
     justify-content: center;
+    background-color: var(--bgDark-clr1);
 }
 
 .topHomeSect2 h2{
@@ -977,6 +980,7 @@ header{
     height: 100dvh;
     width: 100%;
     padding-inline: var(--padding-gen);
+    background-color: var(--bgDark-clr1);
     background-image: linear-gradient(to bottom, var(--opac-d03), var(--opac-d05)), url(/groove.jpg);
     background-size: cover;
     padding-block: var(--nav-height);
@@ -1066,6 +1070,7 @@ header{
 
     .grooveDisplay{
         gap: 2em;
+        background-attachment: none;
     }
 }
 
