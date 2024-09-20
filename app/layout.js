@@ -33,6 +33,11 @@ export const metadata = {
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
     title: 'DMayor Fitness & Game Hub',
     description: 'Discover DMayor Fitness & Game Hub, a unique blend of fitness and fun. Experience a community that welcomes everyone with open arms and endless activities.',
+    images: [
+      {
+        url: "https://dmayorfitness.com/opengraph-image.png"
+      }
+    ]
   },
   twitter: {
     card: "summary_image_large",
@@ -40,6 +45,11 @@ export const metadata = {
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
     title: 'DMayor Fitness & Game Hub',
     description: 'Discover DMayor Fitness & Game Hub, a unique blend of fitness and fun. Experience a community that welcomes everyone with open arms and endless activities.',
+    images: [
+      {
+        url: "https://dmayorfitness.com/opengraph-image.png"
+      }
+    ]
   },
 }
 
