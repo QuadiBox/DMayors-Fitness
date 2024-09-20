@@ -17,7 +17,7 @@ export const metadata = {
       description: 'Get answers to your questions about DMayor Fitness & Game Hub, memberships, and activities.',
     },
     twitter: {
-      card: "FAQs",
+      card: "summary_image_large",
       creator: "@QuadVox",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
       title: 'FAQs | DMayor Fitness & Game Hub',

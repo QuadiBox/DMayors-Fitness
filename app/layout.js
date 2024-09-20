@@ -35,7 +35,7 @@ export const metadata = {
     description: 'Discover DMayor Fitness & Game Hub, a unique blend of fitness and fun. Experience a community that welcomes everyone with open arms and endless activities.',
   },
   twitter: {
-    card: "Home",
+    card: "summary_image_large",
     creator: "@QuadVox",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
     title: 'DMayor Fitness & Game Hub',

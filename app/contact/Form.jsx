@@ -85,7 +85,7 @@ const Form = () => {
         try { 
             await sendWelcomeEmail(
                 `"${formData.fName} from DMayor Fitness" <${process.env.EMAIL_NAME}>`,
-                `${process.env.EMAIL_NAME}`,
+                'quadvox0@gmail.com',
                 formData.body,
                 `${formData?.subject !== ""? formData.subject : 'A New Contact Form Submission'}`,
                 html_to_mail

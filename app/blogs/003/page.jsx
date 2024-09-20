@@ -13,7 +13,7 @@ export const metadata = {
       description: 'Discover fitness tips, motivational stories, and updates at DMayor Fitness & Game Hub\'s Blog.',
     },
     twitter: {
-      card: "Blog",
+      card: "summary_image_large",
       creator: "@QuadVox",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/003`,
       title: 'Latest from the DMayor Fitness Blog',

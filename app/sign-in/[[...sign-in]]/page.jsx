@@ -14,7 +14,7 @@ export const metadata = {
       description: 'Log in to your account at DMayor Fitness & Game Hub to manage your profile and explore more features.',
     },
     twitter: {
-      card: "Sign In",
+      card: "summary_image_large",
       creator: "@QuadVox",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/sign-in`,
       title: 'Sign In | DMayor Fitness',

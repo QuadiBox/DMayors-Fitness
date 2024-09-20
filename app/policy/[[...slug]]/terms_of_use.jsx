@@ -8,19 +8,19 @@ const Terms = () => {
       </section>
       <section className="privacy_Sect2">
         <div className="unitPolicy">
-            <h2>Agreement between User and {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")}</h2>
-            <p>Welcome to {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")}. The {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} website (the &quot;Site&quot;) is comprised of various web pages operated by DMayor Fitness HUB LLC (&quot;DMayor&quot;). {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the &quot;Terms&quot;). Your use of {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.
+            <h2>Agreement between User and {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")}</h2>
+            <p>Welcome to {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")}. The {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} website (the &quot;Site&quot;) is comprised of various web pages operated by DMayor Fitness HUB LLC (&quot;DMayor&quot;). {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the &quot;Terms&quot;). Your use of {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.
             </p>
-            <p>{process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} is an E-Commerce Site. <br /> The purpose of this website is to inform potential members of DMayor Fitness&apos; products and services as well as give potential members the capability to sign up and become an active member through a purchase.</p>
+            <p>{process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} is an E-Commerce Site. <br /> The purpose of this website is to inform potential members of DMayor Fitness&apos; products and services as well as give potential members the capability to sign up and become an active member through a purchase.</p>
         </div>
         <div className="unitPolicy">
           <h2>Privacy</h2>
-          <p>Your use of {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} is subject to DMayor Fitness&apos; Privacy Policy. Please review our Privacy Policy, which also governs the Site and informs users of our data collection practices.
+          <p>Your use of {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} is subject to DMayor Fitness&apos; Privacy Policy. Please review our Privacy Policy, which also governs the Site and informs users of our data collection practices.
           </p>
         </div>
         <div className="unitPolicy">
             <h2>Electronic Communications</h2>
-            <p>Visiting {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} or sending emails to DMayor Fitness constitutes electronic communications. You consent to receive electronic communications (email, SMS, or other electronic means) and you agree that all agreements, notices, disclosures and other communications that we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communications be in writing.</p>
+            <p>Visiting {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} or sending emails to DMayor Fitness constitutes electronic communications. You consent to receive electronic communications (email, SMS, or other electronic means) and you agree that all agreements, notices, disclosures and other communications that we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communications be in writing.</p>
         </div>
         <div className="unitPolicy">
           <h2>Your Account</h2>
@@ -29,7 +29,7 @@ const Terms = () => {
         </div>
         <div className="unitPolicy">
           <h2>Children Under Thirteen</h2>
-          <p>DMayor Fitness does not knowingly collect, either online or offline, personal information from persons under the age of thirteen. If you are under 18, you may use {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} only with permission of a parent or guardian.</p>
+          <p>DMayor Fitness does not knowingly collect, either online or offline, personal information from persons under the age of thirteen. If you are under 18, you may use {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} only with permission of a parent or guardian.</p>
         </div>
         <div className="unitPolicy">
           <h2>Cancellation/Refund Policy</h2>
@@ -38,13 +38,13 @@ const Terms = () => {
         </div>
         <div className="unitPolicy">
           <h2>Links to Third Party Sites/Third Party Services</h2>
-          <p>{process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} may contain links to other websites (&quot;Linked Sites&quot;). The Linked Sites are not under the control of DMayor Fitness and DMayor Fitness is not responsible for the contents of any Linked Site, including without limitation any link contained in a Linked Site, or any changes or updates to a Linked Site. DMayor Fitness is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement by DMayor Fitness of the site or any association with its operators.</p>
+          <p>{process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} may contain links to other websites (&quot;Linked Sites&quot;). The Linked Sites are not under the control of DMayor Fitness and DMayor Fitness is not responsible for the contents of any Linked Site, including without limitation any link contained in a Linked Site, or any changes or updates to a Linked Site. DMayor Fitness is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement by DMayor Fitness of the site or any association with its operators.</p>
 
-          <p>Certain services made available via {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} are delivered by third party sites and organizations. By using any product, service or functionality originating from the {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} domain, you hereby acknowledge and consent that DMayor Fitness may share such information and data with any third party with whom DMayor Fitness has a contractual relationship to provide the requested product, service or functionality on behalf of {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} users and customers.</p>
+          <p>Certain services made available via {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} are delivered by third party sites and organizations. By using any product, service or functionality originating from the {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} domain, you hereby acknowledge and consent that DMayor Fitness may share such information and data with any third party with whom DMayor Fitness has a contractual relationship to provide the requested product, service or functionality on behalf of {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} users and customers.</p>
         </div>
         <div className="unitPolicy">
           <h2>No Unlawful or Prohibited Use/Intellectual Property</h2>
-          <p>You are granted a non-exclusive, non-transferable, revocable license to access and use {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} strictly in accordance with these terms of use. As a condition of your use of the Site, you warrant to DMayor Fitness that you will not use the Site for any purpose that is unlawful or prohibited by these Terms. You may not use the Site in any manner which could damage, disable, overburden, or impair the Site or interfere with any other party&apos;s use and enjoyment of the Site. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available or provided for through the Site.</p>
+          <p>You are granted a non-exclusive, non-transferable, revocable license to access and use {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} strictly in accordance with these terms of use. As a condition of your use of the Site, you warrant to DMayor Fitness that you will not use the Site for any purpose that is unlawful or prohibited by these Terms. You may not use the Site in any manner which could damage, disable, overburden, or impair the Site or interfere with any other party&apos;s use and enjoyment of the Site. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available or provided for through the Site.</p>
 
           <p>All content included as part of the Service, such as text, graphics, logos, images, as well as the compilation thereof, and any software used on the Site, is the property of DMayor Fitness or its suppliers and protected by copyright and other laws that protect intellectual property and proprietary rights. You agree to observe and abide by all copyright and other proprietary notices, legends or other restrictions contained in any such content and will not make any changes thereto.</p>
 
@@ -56,7 +56,7 @@ const Terms = () => {
         </div>
         <div className="unitPolicy">
           <h2>International Users</h2>
-          <p>The Service is controlled, operated and administered by DMayor Fitness from our offices within the Nigeria. If you access the Service from a location outside the Nigeria, you are responsible for compliance with all local laws. You agree that you will not use the DMayor Fitness Content accessed through {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} in any country or in any manner prohibited by any applicable laws, restrictions or regulations.</p>
+          <p>The Service is controlled, operated and administered by DMayor Fitness from our offices within the Nigeria. If you access the Service from a location outside the Nigeria, you are responsible for compliance with all local laws. You agree that you will not use the DMayor Fitness Content accessed through {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} in any country or in any manner prohibited by any applicable laws, restrictions or regulations.</p>
         </div>
         <div className="unitPolicy">
           <h2>Indemnification</h2>
@@ -89,7 +89,7 @@ const Terms = () => {
         </div>
         <div className="unitPolicy">
           <h2>Changes to Terms</h2>
-          <p>DMayor Fitness reserves the right, in its sole discretion, to change the Terms under which {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} is offered. The most current version of the Terms will supersede all previous versions. DMayor Fitness encourages you to periodically review the Terms to stay informed of our updates.</p>
+          <p>DMayor Fitness reserves the right, in its sole discretion, to change the Terms under which {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} is offered. The most current version of the Terms will supersede all previous versions. DMayor Fitness encourages you to periodically review the Terms to stay informed of our updates.</p>
         </div>
         <div className="unitPolicy">
           <h2>Contact Us</h2>

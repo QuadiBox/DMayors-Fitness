@@ -13,7 +13,7 @@ export const metadata = {
       description: 'Explore our Game Hub and enjoy unlimited access to video games, board games, and more. Fun awaits at DMayor Fitness & Game Hub!',
     },
     twitter: {
-      card: "Game Hub",
+      card: "summary_image_large",
       creator: "@QuadVox",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/game_hub`,
       title: 'Game Hub | DMayor Fitness & Game Hub',

@@ -13,7 +13,7 @@ export const metadata = {
     description: 'Manage your profile, track your fitness journey, and stay engaged with the DMayor Fitness & Game Hub Dashboard.',
   },
   twitter: {
-    card: "Notifications - Dashboard",
+    card: "summary_image_large",
     creator: "@QuadVox",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/dashboard_admin/notifications`,
     title: 'Your Profile | DMayor Fitness',

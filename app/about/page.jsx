@@ -13,7 +13,7 @@ export const metadata = {
     description: 'Find out what makes DMayor Fitness & Game Hub unique! Learn about our journey, mission, and the inclusive community we\'re building.',
   },
   twitter: {
-    card: "About",
+    card: "summary_image_large",
     creator: "@QuadVox",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
     title: 'About DMayor Fitness & Game Hub',

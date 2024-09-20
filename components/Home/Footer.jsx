@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="thirdfooterSect">
-            <p>Copyright © 2023 - 2024 {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} All rights reserved.</p>
+            <p>Copyright © 2023 - 2024 dmayorfitness.com All rights reserved.</p>
             <p>#NOJUDGEMENT</p>
         </div>
     </footer>

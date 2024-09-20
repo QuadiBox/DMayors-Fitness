@@ -15,7 +15,7 @@ export const metadata = {
     description: 'Choose the right membership for you at DMayor Fitness & Game Hub. Enjoy exclusive access to our fitness and game hub.',
   },
   twitter: {
-    card: "Home",
+    card: "summary_image_large",
     creator: "@QuadVox",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/membership`,
     title: 'Membership | DMayor Fitness & Game Hub',

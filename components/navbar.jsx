@@ -50,6 +50,9 @@ const Navbar = () => {
 
     useEffect(() => {
         const comtainer = document.querySelector(".grandHomeCntn");
+
+        const homeScrollSect = comtainer.querySelector(".homeSect2");
+        const gameScrollSect = comtainer.querySelector(".detail_Sect2");
     
         comtainer?.addEventListener("click", (e) => {
             if (e.target.className === "navbarOpenBtn" || e.target.className === "des-span") {
@@ -59,6 +62,22 @@ const Navbar = () => {
             } else if (e.target.className === "closeNavbarButton" || e.target.className === "icofont-close-line" || e.target.className === "sideNavbarCloseBtn" || e.target.className === "icofont-close") {
                 setOpenNavbar(false)
                 setopenMobileNav(false)
+            } else if (e.target.className === "heroDownScroller" || e.target.className === "icofont-dotted-down" ) {
+
+                if (homeScrollSect) {
+
+                    homeScrollSect.scrollIntoView({
+                        behavior: 'smooth', // Smooth scrolling effect
+                        block: 'start', // Aligns the element to the top of the viewport
+                    });
+                    
+                } else {
+
+                    gameScrollSect.scrollIntoView({
+                        behavior: 'smooth', // Smooth scrolling effect
+                        block: 'start', // Aligns the element to the top of the viewport
+                    });
+                }
             }
         })
 

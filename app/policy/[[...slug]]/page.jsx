@@ -18,7 +18,7 @@ export const metadata = {
       description: 'Review the policies at DMayor Fitness & Game Hub. Stay informed to enjoy the best experience.',
     },
     twitter: {
-      card: "Policy",
+      card: "summary_image_large",
       creator: "@QuadVox",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/policy`,
       title: 'DMayor Fitness & Game Hub',

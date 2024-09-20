@@ -16,7 +16,7 @@ const Privacy = () => {
                 <div className="unitPolicy">
                     <h2>I. What information do we collect?</h2>
                     <p>
-                    Currently, {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} gathers information from you (such as name, e-mail address, business and/or home address, age, zip code, and travel preferences) strictly for contact purposes when users opt to fill out an e-mail submission form to inquire about our company and about membership. In some cases we ask for other optional information including additional contact information and certain demographic information (such as phone number and gender).
+                    Currently, {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} gathers information from you (such as name, e-mail address, business and/or home address, age, zip code, and travel preferences) strictly for contact purposes when users opt to fill out an e-mail submission form to inquire about our company and about membership. In some cases we ask for other optional information including additional contact information and certain demographic information (such as phone number and gender).
                     </p>
                 </div>
                 <div className="unitPolicy">
@@ -54,12 +54,12 @@ const Privacy = () => {
                 </div>
                 <div className="unitPolicy">
                     <h2>VII. How do we protect children on our web site?</h2>
-                    <p>We are committed to making a safe environment for children on our site. When we collect information for membership inquiry purposes, users are informed they must be at least 18 years of age or have parental consent to provide personally identifying information to us. We encourage parents to monitor children&apos;s Internet use to keep them safe while navigating {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} and all other areas of the Internet.
+                    <p>We are committed to making a safe environment for children on our site. When we collect information for membership inquiry purposes, users are informed they must be at least 18 years of age or have parental consent to provide personally identifying information to us. We encourage parents to monitor children&apos;s Internet use to keep them safe while navigating {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} and all other areas of the Internet.
                     </p>
                 </div>
                 <div className="unitPolicy">
                     <h2>VIII. Does this Privacy Policy apply to external links found on this Web site?</h2>
-                    <p>While this site may contain links to other sites, please note that when you click on one of these links, you are &apos;clicking&apos; away from {process.env.NEXT_PUBLIC_BASE_URL.replace("http://", "")} to another Web site. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours. We are not responsible for the privacy practices or the content of such Web sites.
+                    <p>While this site may contain links to other sites, please note that when you click on one of these links, you are &apos;clicking&apos; away from {process.env.NEXT_PUBLIC_BASE_URL.replace("https://", "")} to another Web site. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours. We are not responsible for the privacy practices or the content of such Web sites.
                     </p>
                 </div>
                 <div className="unitPolicy">

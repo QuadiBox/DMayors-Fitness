@@ -13,7 +13,7 @@ export const metadata = {
       description: 'Sign up at DMayor Fitness & Game Hub and become part of our inclusive, motivating community.',
     },
     twitter: {
-      card: "Sign Up",
+      card: "summary_image_large",
       creator: "@QuadVox",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/sign-up`,
       title: 'Sign Up | DMayor Fitness',
