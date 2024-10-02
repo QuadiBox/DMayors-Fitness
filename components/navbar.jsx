@@ -230,7 +230,7 @@ const Navbar = () => {
                     <Link href={"/membership"}>Membership</Link>
                     <Link href={`${"/dashboard"}`}>Dashboard</Link>
                     <Link href={"/game_hub"}>Game.Hub</Link>
-                    <a href="#FAQs">FAQs</a>
+                    <a href={"/faqs"}>FAQs</a>
 
                 </div>
             </div>
